@@ -1,8 +1,8 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
-    path('', views.index),
-    path('group/', views.group_posts),
-    path('group/<slug:slug>/', views.group_posts_detail)
+    path('', views.index),    # Главная страница
+    path('group/<slug:slug>/', views.group_posts)   # Список блогов
 ]
